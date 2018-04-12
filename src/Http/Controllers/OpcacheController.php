@@ -2,7 +2,7 @@
 
 namespace Arseniys1\Opcache\Http\Controllers;
 
-use Appstract\Opcache\OpcacheFacade as OPcache;
+use Arseniys1\Opcache\OpcacheFacade as OPcache;
 use Illuminate\Routing\Controller as BaseController;
 
 /**
