@@ -30,7 +30,7 @@ class OpcacheServiceProvider extends ServiceProvider
 
         // bind routes
         $router->group([
-            'middleware'    => [\Appstract\Opcache\Http\Middleware\Request::class],
+            'middleware'    => [\Arseniys1\Opcache\Http\Middleware\Request::class],
             'prefix'        => 'opcache-api',
             'namespace'     => 'Arseniys1\Opcache\Http\Controllers',
         ], function ($router) {
