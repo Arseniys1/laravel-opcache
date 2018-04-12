@@ -12,13 +12,6 @@ class OpcacheServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-            $this->commands([
-                Commands\Clear::class,
-                Commands\Config::class,
-                Commands\Status::class,
-                Commands\Optimize::class,
-            ]);
-
             if (! str_contains($this->app->version(), 'Lumen')) {
                 $this->publishes([
                     __DIR__.'/../config/opcache.php' => config_path('opcache.php'),

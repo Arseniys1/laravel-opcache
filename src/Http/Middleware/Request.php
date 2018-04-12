@@ -22,7 +22,7 @@ class Request
     public function handle($request, Closure $next)
     {
         if (! $this->isAllowed($request)) {
-            throw new HttpException(403, 'This action is unauthorized.');
+            return response('This action is unauthorized.', 401);
         }
 
         return $next($request);
